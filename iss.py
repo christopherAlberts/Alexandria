@@ -57,7 +57,7 @@ def iss():
 
     url_iss_pass_time = 'http://api.open-notify.org/iss-pass.json?lat=' + str(my_lat) + '&lon=' + str(my_lon)
     iss_pass = url_response(url_iss_pass_time)
-    num_passes_today = clean_up(str(iss_pass), "passes': ", "}")
+    num_passes_today = str(len(iss_pass.get("response")))
 
     # DISTANCE TO INTERNATIONAL SPACE STATION CALCULATION:
     r = 6371  # Radius of the Earth in km
