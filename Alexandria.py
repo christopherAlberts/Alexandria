@@ -87,30 +87,5 @@ def Maintainer(file_name,num_of_files):
 
 #-------------------------------------------------------------------------------------------
 
-def CaptainsLog(script_file_name, log_file_name, num_of_files): 
-
-    # script_file_name = This is where all the powershell scripts are stored.
-    # log_file_name = Name of folder containing the files and its path. 
-    # num_of_files = Number of files allowed in log folder.
-    
-    stardate = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
-    stardate1 = str(stardate) + ".txt"
-    file = open(log_file_name + stardate1, "w")
-
-    file.write("##############################\n")
-    file.write("         Captains Log\n")
-    file.write("Stardate: " + stardate + "\n")
-    file.write("##############################\n")
-
-    Script_Runner(script_file_name, file)
-    
-    file.write("\nLive long, and prosper\n")
-    
-    # This method is used to calculate the amount of log files in a folder. 
-    # And remove the oldest files if there are to many.
-    Maintainer(log_file_name, num_of_files)
-
-#-------------------------------------------------------------------------------------------
-
 
 
