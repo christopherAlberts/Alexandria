@@ -9,6 +9,7 @@ import os
 # This method converts string to lists.
 
 def str_to_list(word): 
+    
     return [char for char in word]  
 
 #-------------------------------------------------------------------------------------------
@@ -25,19 +26,7 @@ def list_to_ascii(original_list):
 
 def str_to_ascii(text):
 
-    
-    def str_to_list(word): 
-
-        return [char for char in word] 
-        
-    def list_to_ascii(original_list):
-        
-        return [ord(x) for x in original_list]
-    
-    text_list = str_to_list(text)
-    text_ascii = list_to_ascii(text_list)
-
-    return text_ascii
+    return [ord(x) for x in [char for char in text] ]
 
 #-------------------------------------------------------------------------------------------
 
