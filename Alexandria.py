@@ -21,6 +21,17 @@ fr.close()
 
 #-------------------------------------------------------------------------------------------
 
+# This method converts string to lists.
+
+def str_to_list(word): 
+    return [char for char in word]  
+
+a = split("hello world")
+
+print (a)
+
+#-------------------------------------------------------------------------------------------
+
 def Powershell_exe(destination_of_script,destination_of_file):
 
     # This method can execute powershell scripts 
