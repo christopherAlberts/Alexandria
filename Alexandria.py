@@ -32,6 +32,41 @@ print (a)
 
 #-------------------------------------------------------------------------------------------
 
+# This method converts a list of characters to their corresponding list of ascii numbers.
+
+def list_to_ascii(original_list):
+
+    return [ord(x) for x in original_list]
+
+
+list1 = ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+a = list_to_ascii(list1)
+print(a)
+
+#-------------------------------------------------------------------------------------------
+
+# This method converts string to list of each characters corresponding ascii number.
+
+def str_to_ascii(text):
+
+    
+    def str_to_list(word): 
+
+        return [char for char in word] 
+        
+    def list_to_ascii(original_list):
+        
+        return [ord(x) for x in original_list]
+    
+    text_list = str_to_list(text)
+    text_ascii = list_to_ascii(text_list)
+
+    return text_ascii
+
+print(str_to_ascii("hello world"))
+
+#-------------------------------------------------------------------------------------------
+
 def Powershell_exe(destination_of_script,destination_of_file):
 
     # This method can execute powershell scripts 
