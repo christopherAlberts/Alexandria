@@ -2,22 +2,7 @@ from datetime import datetime
 import subprocess
 import os
 
-#-------------------------------------------------------------------------------------------
-# READ AND WRITE TEXT TO AND FROM FILE
-
-now = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
-
-# WRITE TO A FILE 
-fw = open(str(now) + '.txt', 'w')
-fw.write('Writing some stuff in my text file\n')
-fw.write('I like bacon')
-fw.close()
-
-# READ FROM A FILE
-fr = open(str(now) + '.txt', 'r')
-text = fr.read()
-print(text)
-fr.close()
+#  This file contains a library of some usefull python3 methods.
 
 #-------------------------------------------------------------------------------------------
 
@@ -26,10 +11,6 @@ fr.close()
 def str_to_list(word): 
     return [char for char in word]  
 
-a = str_to_list("hello world")
-
-print (a)
-
 #-------------------------------------------------------------------------------------------
 
 # This method converts a list of characters to their corresponding list of ascii numbers.
@@ -37,11 +18,6 @@ print (a)
 def list_to_ascii(original_list):
 
     return [ord(x) for x in original_list]
-
-
-list1 = ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
-a = list_to_ascii(list1)
-print(a)
 
 #-------------------------------------------------------------------------------------------
 
@@ -62,8 +38,6 @@ def str_to_ascii(text):
     text_ascii = list_to_ascii(text_list)
 
     return text_ascii
-
-print(str_to_ascii("hello world"))
 
 #-------------------------------------------------------------------------------------------
 
