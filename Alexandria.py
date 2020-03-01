@@ -26,7 +26,7 @@ fr.close()
 def str_to_list(word): 
     return [char for char in word]  
 
-a = split("hello world")
+a = str_to_list("hello world")
 
 print (a)
 
