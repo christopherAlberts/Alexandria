@@ -30,7 +30,7 @@ def str_to_ascii(text):
 
 #-------------------------------------------------------------------------------------------
 
-def Powershell_exe(destination_of_script,destination_of_file):
+def powershell_exe(destination_of_script,destination_of_file):
 
     # This method can execute powershell scripts 
     # located in both .txt and .ps1 files
@@ -44,7 +44,7 @@ def Powershell_exe(destination_of_script,destination_of_file):
 
 #-------------------------------------------------------------------------------------------
 
-def Script_Runner(script_folder_loction, output_file_location):
+def script_runner(script_folder_loction, output_file_location):
     
     # This method iterates through the script folder. 
     # It then uses the Powershell_exe() method to execute each file.
@@ -67,7 +67,7 @@ def Script_Runner(script_folder_loction, output_file_location):
 
 #-------------------------------------------------------------------------------------------
 
-def Maintainer(file_name,num_of_files):
+def maintainer(file_name,num_of_files):
 
     # This method is used to calculate the amount of files in a folder. 
     # And remove the oldest files if there are to many.
@@ -96,7 +96,7 @@ def Maintainer(file_name,num_of_files):
 
 #-------------------------------------------------------------------------------------------
 
-def LocalMAC():
+def localmac():
 
     #  This Method returns your MAC address.
     
